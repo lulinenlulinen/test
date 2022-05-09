@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>媒介查询</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.root{
+				width: 600px;
+				height: 400px;
+				background-color: red;
+			}
+			
+			/*媒介查询   就是监听设备的宽度或者高度  一旦宽高变化到了监听的值范围内!!  就会执行媒介查询中的代码!!*/
+		
+		
+		@media only screen and (max-width: 1200px) {
+			.root{
+				border: 10px solid gold;
+			}
+			
+			body{
+				background-color: skyblue;
+			}
+		}	
+			
+			@media only screen and (min-width: 700px) {
+			.root{
+				background-color: green;
+			}
+			
+		  body{
+		  	background-color: pink;
+		  }
+		
+		
+		}
+		/*------复合写法,and旁边一定要有空格--------------*/	
+		@media only screen and (min-width: 800px) and (max-width: 1340px) {
+			.root{
+				border-radius: 50%;
+			}
+		}
+			
+		</style>
+	</head>
+	<body>
+		<div class="root"></div>
+	</body>
+</html>
+<!--
+	媒介查询:
+	监听对象的宽度或者高度.并且设置一个临界值,当达到临界值的时候触发媒介查询中对应的代码,从而对页面布局做出改变!!
+	语法:
+	@media 监听的设备  and (设置监听的临界值){
+		css代码!
+	}
+	常用设备类型:
+	only screen 就是监听手机,电脑,平板设备.
+	all  是监听所有设备.
+	
+	
+-->

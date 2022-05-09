@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.root {
+	width: 100%;
+	margin: 0px auto;
+	background-color: rgb(242, 242, 242);
+}
+
+
+/*---------固定布局--------------*/
+
+.fix {
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.img img {
+	width: 136px;
+	padding-top: 10px;
+}
+
+.a {
+	margin: 5px 20px;
+}
+
+.a>a {
+	margin: 5px 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.img img {
+		width: 106px;
+	}
+	.a a{
+			font-size: 12px;
+		}
+}
+
+
+/*--------图片文字-----------*/
+
+
+/*--------绝对布局------------------*/
+
+
+/*--------底部-----------*/

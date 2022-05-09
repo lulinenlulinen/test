@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*------------------------*/
+.root{
+	width: 1300px;
+	height: 1000px;
+	/*background-color: salmon;*/
+	margin: 20px auto;
+	
+}
+
+.box{
+	width: 240px;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	
+}
+.box:nth-child(5n){
+	margin-right: 0;
+}
+
+.header > img{
+	width: 240px;
+	border-radius: 8px;
+}
+
+.header{
+	position: relative;
+}
+.vip{
+	background-color: gold;
+	color: white;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.jishu{
+	position: absolute;
+	left: 10px;
+	bottom: 6px;
+	color: white;
+	font-weight: bold;
+}
+
+/*'-------悬浮层---------'*/
+.over{
+	position: absolute;
+	left: -20px;
+	top: -10px;
+	visibility: hidden;
+	width: 280px;
+	height: 400px;
+	background-color: white;
+	border-radius: 8px;
+	/*阴影    向右偏移量  向下偏移量  发散度   阴影宽度  颜色*/
+	box-shadow: 0 10px 20px 0 gainsboro;
+}
+.over img{
+	width: 280px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.header:hover .over{
+	visibility: visible;
+}
+/*-------------------------------*/
+.box>p:last-of-type{
+	color: gray;
+	font-size: 14px;
+}
+.box a{
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.box a:hover{
+	color: orange;
+}
+/*-----------------------------*/
+/*/
